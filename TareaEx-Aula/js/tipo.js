@@ -5,9 +5,20 @@ var s = ((a+b+c)/2) ;
 var area = (Math.pow(s* (s-a) * (s-b) * (s-c)),(1/2));
 if (a==b && a==c && b==c) 
 {
-	document.write('<h1>'+area+'</h1><img src="../img/equilatero.jpg">');
+	document.write("<img src='../img/equilatero.jpg'>");
+	document.write("<h2 class='tipo'>Triágulo: Equilatero</h2>");
+	document.write("<h2 id='area'>Área:"+area+"</h2>");
+
+
 }else if (a == b || a == c || b == c) {
-	document.write('<H1>'+area+'</H1><img src="../img/isosceles.jpg">');
+	document.write("<img src='../img/isosceles.jpg'>");
+	document.write("<h2 class='tipo'>Triágulo: Isósceles</h2>");
+	document.write("<h2 id='area2'>Área:" +area+"</h2>");
+
+	
 }else if (a !=b && a!=c && b!=c) {
-	document.write('<H1>'+area+'</H1><img src="../img/escaleno.jpg">');
+	document.write("<img src='../img/escaleno.jpg'>");
+	document.write("<h2 class='tipo'>Triágulo: Escaleno</h2>");
+	document.write("<h2 id='area3'>Área:" +area+"</h2>");
+
 }
