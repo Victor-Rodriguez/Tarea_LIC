@@ -5,9 +5,9 @@ var s = ((a+b+c)/2) ;
 var area = (Math.pow(s* (s-a) * (s-b) * (s-c)),(1/2));
 if (a==b && a==c && b==c) 
 {
-	document.write('<img src="../img/equilatero.jpg">');
+	document.write('<h1>'+area+'</h1><img src="../img/equilatero.jpg">');
 }else if (a == b || a == c || b == c) {
-	document.write('<img src="../img/isosceles.jpg">');
+	document.write('<H1>'+area+'</H1><img src="../img/isosceles.jpg">');
 }else if (a !=b && a!=c && b!=c) {
-	document.write('<img src="../img/escaleno.jpg">');
+	document.write('<H1>'+area+'</H1><img src="../img/escaleno.jpg">');
 }
